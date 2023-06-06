@@ -1,13 +1,13 @@
 interface ComponentProps{
-
+    name: string;
 }
 
-export const Component: React.FC<ComponentProps> = ({}) => {
+export const Component: React.FC<ComponentProps> = ({name}) => {
 
     return(
         <>
             <h1>
-                Hola Roger
+                Hola Roger {name}
             </h1>
         </>
     )
