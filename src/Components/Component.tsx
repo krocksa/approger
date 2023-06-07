@@ -1,14 +1,13 @@
+import { jsx } from "@emotion/react";
+
 interface ComponentProps{
     name: string;
 }
 
-export const Component: React.FC<ComponentProps> = ({name}) => {
-
-    return(
-        <>
-            <h1>
-                Hola Roger {name}
-            </h1>
-        </>
-    )
+export function Component (props: ComponentProps): JSX.Element{
+    return<>
+        <h1>
+        Hola, {props.name}
+        </h1>
+    </>
 }
